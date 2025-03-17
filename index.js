@@ -23,10 +23,19 @@ console.log(overwriteBestCustomer());
 
 const leastFavoriteCustomer = "doe";
 function changeLeastFavoriteCustomer() {
-  leastFavoriteCustomer = "Jane";
-  return leastFavoriteCustomer;
+  throw new Error("Assignment to constant variable.");
 }
-changeLeastFavoriteCustomer();
+
+/* (function changeLeastFavoriteCustomer() {
+  leastFavoriteCustomer = "John";
+})(); */
+
+/* 
+const leastFavoriteCustomer = "doe";
+function changeLeastFavoriteCustomer() {
+  leastFavoriteCustomer = "John";
+}
+changeLeastFavoriteCustomer(); */
 
 /* const changeLeastFavoriteCustomer = function () {
   leastFavoriteCustomer = "Jane";
